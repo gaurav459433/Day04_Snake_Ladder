@@ -6,5 +6,7 @@ public class SnakeLadder {
         System.out.println();
         int singlePlayer = 0;
         System.out.println("Starting Position Of Single Player is :" +singlePlayer);
+        int dieCheck = (int) Math.floor(Math.random() * 10) % 6 + 1;
+        System.out.println("Player Rolls The Die & Get The Number :" +dieCheck);
     }
 }
