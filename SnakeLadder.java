@@ -16,15 +16,19 @@ public class SnakeLadder {
                 case 0:
                     singlePlayer += dieCheck;
                     System.out.println("Player Gets a Ladder & Player Moves ahead By Number Of Position :" + dieCheck);
-
+                    if (singlePlayer > 100) {
+                        singlePlayer = 100;
                     System.out.println("Player Current Position :" + singlePlayer);
+                    }
                     break;
 
                 case 1:
                     singlePlayer -= dieCheck;
                     System.out.println("Player Bites By Snake & Player Moves Behind By Number Of Position :" + dieCheck);
-
+                    if ( singlePlayer < 0) {
+                        singlePlayer = 0;
                     System.out.println("Player Current Position :" + singlePlayer);
+                    }
                     break;
 
                 case 2:
